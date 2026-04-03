@@ -9,7 +9,7 @@ custom_style.css - в данный файл вынес все стили что 
 forma_os.php - в данном файле я проверял работу шаблона. 
 
 Как использовать :
-Поместить папку custom_news в /www/local/templates/my_template/components/bitrix/form.result.new 
-На странице, где используется компонент bitrix:news.list, в настройках компонента выбрать шаблон custom_news.
+Поместить папку custom_form в /www/local/templates/my_template/components/bitrix/form.result.new 
+Добавить шаблон на страницу.
 
 В PHP файлах старался использовать страндарт PSR шаблон настроил под использование в папке local
