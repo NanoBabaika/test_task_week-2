@@ -1,0 +1,115 @@
+/*  глобальные контейнеры (Разжимаем Битрикс) */
+
+/* ccкрываем боковую панель  */
+#sidebar, .sidebar, aside, .left-column {
+    display: none !important;
+}
+
+/* растягиваем рабочую область на освободившееся место */
+#content, .workarea, .right-column {
+    width: 100% !important;
+    max-width: 1600px !important;
+    margin: 0 auto !important;
+    float: none !important;  
+}
+
+ 
+#workarea {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* главная форма */
+.contact-form__form {
+    display: flex !important;
+    flex-direction: column !important;
+    max-width: 1600px !important;
+    margin: 0 auto !important;
+    background: #f5f5f6;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+/* Обертка для колонок - горизонтальный ряд */
+.contact-form__form-inputs {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    gap: 30px; /* Расстояние между колонками */
+    margin-bottom: 40px;
+}
+
+/* колонки */
+.contact-form__column {
+    flex: 1 !important; 
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px;
+}
+
+/* колонка с сообщением */
+.contact-form__column--message {
+    flex: 1.2 !important; 
+}
+
+/* инпуты внутри колонок всегда на всю ширину колонки */
+.contact-form__input {
+    width: 100% !important;
+}
+
+.contact-form__form-message textarea {
+    height: 100% !important;
+    min-height: 150px;
+}
+
+/* Нижний блок */
+.contact-form__bottom {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* адаптив: Переключаем всё в колонку */
+@media (max-width: 1200px) {
+    .contact-form__form-inputs {
+        flex-direction: column !important;
+        gap: 20px;
+    }
+    
+    .contact-form__column,
+    .contact-form__bottom-policy {
+        width: 100% !important;
+    }
+    .contact-form__form {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
